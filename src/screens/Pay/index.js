@@ -5,7 +5,7 @@ import SearchBar from '../../components/SearchBar';
 import Suggestions from '../../components/Suggestions';
 
 import PayTabNavigator from '../../components/PayTabNavigator';
-import { Wrapper, Header } from './styles';
+import { Wrapper, Header, ContainerOrg } from './styles';
 
 export default function Pay() {
   return (
@@ -14,8 +14,13 @@ export default function Pay() {
         <MaterialCommunityIcons name="qrcode-scan" size={30} color="#00AC4A" />
         <SearchBar />
       </Header>
+      
       <PayTabNavigator />
-      <Suggestions />
+
+      <ContainerOrg>
+        <Suggestions />
+      </ContainerOrg>
+      
     </Wrapper>
   );
 }

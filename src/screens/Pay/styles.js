@@ -13,3 +13,8 @@ export const Header = styled.View`
   align-items: center; 
 `;
 
+export const ContainerOrg = styled.View`
+  flex: 1;
+  height: 50px;
+  padding: 110px 0;
+`;
