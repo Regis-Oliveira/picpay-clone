@@ -3,12 +3,13 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 export const Container = styled.View`
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Input = styled.TextInput.attrs({
   placeholderTextColor: '#000',
 })`
-  width: 200px;
   height: 50px;
   padding: 10px;
   border-radius: 8px;

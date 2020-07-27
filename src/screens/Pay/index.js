@@ -2,10 +2,9 @@ import React from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import SearchBar from '../../components/SearchBar';
-import Suggestions from '../../components/Suggestions';
 
 import PayTabNavigator from '../../components/PayTabNavigator';
-import { Wrapper, Header, ContainerOrg } from './styles';
+import { Wrapper, Header } from './styles';
 
 export default function Pay() {
   return (
@@ -14,13 +13,9 @@ export default function Pay() {
         <MaterialCommunityIcons name="qrcode-scan" size={30} color="#00AC4A" />
         <SearchBar />
       </Header>
-      
-      <PayTabNavigator />
 
-      <ContainerOrg>
-        <Suggestions />
-      </ContainerOrg>
-      
+      <PayTabNavigator />
+  
     </Wrapper>
   );
 }

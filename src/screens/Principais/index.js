@@ -1,11 +1,17 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Wrapper, View, Header, Title } from './styles';
 
+import SuggestionsDescription from '../../components/SuggestionsDescription';
 
 export default function Principais() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Principais</Text> 
-    </View>
+    <Wrapper>
+      <View>
+        <Header>
+          <Title>Serviços</Title>
+          <SuggestionsDescription />    
+        </Header>
+      </View>  
+    </Wrapper>
   );
 }

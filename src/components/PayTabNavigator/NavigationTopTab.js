@@ -11,11 +11,12 @@ const Tab = createMaterialTopTabNavigator();
 export default function NavigationTopTab() {
   return(
     <Tab.Navigator>
+      
       <Tab.Screen name="Principais" component={PrincipaisScreen} />
-          
+              
       <Tab.Screen name="Locais" component={LocaisScreen} />
-          
+              
       <Tab.Screen name="Store" component={StoreScreen} />
-    </Tab.Navigator>
+    </Tab.Navigator>  
   );
 }

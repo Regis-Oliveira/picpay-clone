@@ -22,6 +22,7 @@ export default function PayButton({ onPress, focused }) {
                 />
                 <Label focused={focused}>Pagar</Label>      
             </Button>
+            
         </TouchableWithoutFeedback>
     );
 }
