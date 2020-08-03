@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Option, Img, Label, Description } from './styles';
+import { Container, Option, Img, Label, Description, Card, Detail } from './styles';
 
 import img1 from '../../images/01.png';
 import img2 from '../../images/02.png';
@@ -11,62 +11,63 @@ import img7 from '../../images/07.png';
 
 const items = [
   {
-    key: String(Math.random()),
+    key: 1,
     img: img1,
     label: 'Recarga de Celular',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: 'Vivo, Claro, Tim, Oi, Nextel',
   },
   {
-    key: String(Math.random()),
+    key: 2,
     img: img2,
     label: 'Uber Pré Pago',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: 'Quer uma carona, estamos a 1 clique de distância, baixe o aplicativo e nos chame!!!',
   },
   {
-    key: String(Math.random()),
+    key: 3,
     img: img3,
     label: 'Onibus',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: 'Abasteça seu cartão de recarga agora mesmo',
   },
   {
-    key: String(Math.random()),
+    key: 4,
     img: img4,
     label: 'TV',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: 'Seus canais favoritos',
   },
   {
-    key: String(Math.random()),
+    key: 5,
     img: img5,
     label: 'Central de Doações',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: 'Ajude quem mais precisa!!!',
   },
   {
-    key: String(Math.random()),
+    key: 6,
     img: img6,
     label: 'Pagar Conta',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: 'Pague sua conta de água, luz, boletos bancários, etc. ',
   },
   {
-    key: String(Math.random()),
+    key: 7,
     img: img7,
     label: 'FAQ',
-    Description: 'Vivo, Claro, Tim, Oi',
+    Description: '--------',
   },
 ];
 
 export default function SuggestionsDescription() {
   return (
     <Container>
-      
-        {items.map((item) => (
+      {items.map((item) => (
+        <Card>
           <Option key={item.key}>
             <Img source={item.img} />
+            <Detail>
               <Label>{item.label}</Label>
               <Description>{item.Description}</Description>
+            </Detail>
           </Option>
-        ))}
-      
-      
+        </Card>
+      ))}
     </Container>
   );
 }

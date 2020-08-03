@@ -8,26 +8,37 @@ export const Container = styled.ScrollView.attrs(() => ({
 }))`
   background: #1e222b;
 `;
+export const Card = styled.View`
+  flex:1;
+`;
 
 export const Option = styled.TouchableOpacity`
   width: 350px;
-  margin: 10px;
+  margin: 12px;
   flex-direction: row;
+  /* background: rgba(255, 255, 255, 0.1); */
 `;
 
-export const Img = styled.Image``;
+export const Detail = styled.View`
+  padding-left: 18px;
+  width: 270px;
+  /* background: rgba(255, 255, 255, 0.1); */
+`;
 
 export const Label = styled.Text`
-  border: 2px;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
-  padding-left: 20px;
-  align-self: baseline;
+  padding-bottom: 4px;
 `;
-  
+
 export const Description = styled.Text`
   font-size: 12px;
-  align-items: center;
   color: #fff;
+  margin-right: 10px;
+  padding: 5px;
+  line-height: 20px;
 `;
+
+export const Img = styled.Image``;  
+
