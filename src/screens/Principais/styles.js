@@ -5,6 +5,8 @@ export const Wrapper = styled.SafeAreaView`
   flex: 1;
 `;
 
+export const Container = styled.ScrollView``;
+
 export const View = styled.View`
   flex: 1;
   background: #1e222b;

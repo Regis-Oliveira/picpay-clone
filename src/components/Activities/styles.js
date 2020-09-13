@@ -85,7 +85,7 @@ export const Option = styled.TouchableOpacity`
   flex-direction: row;
 `;
 
-export const OptionLabel = styled.Text `
+export const OptionLabel = styled.Text`
   color: #fff;
   font-size: 14px;
   margin-left: 5px;

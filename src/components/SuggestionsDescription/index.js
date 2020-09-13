@@ -11,43 +11,43 @@ import img7 from '../../images/07.png';
 
 const items = [
   {
-    key: 1,
+    key: String(Math.random()),
     img: img1,
     label: 'Recarga de Celular',
     Description: 'Vivo, Claro, Tim, Oi, Nextel',
   },
   {
-    key: 2,
+    key: String(Math.random()),
     img: img2,
     label: 'Uber Pré Pago',
     Description: 'Quer uma carona, estamos a 1 clique de distância, baixe o aplicativo e nos chame!!!',
   },
   {
-    key: 3,
+    key: String(Math.random()),
     img: img3,
     label: 'Onibus',
     Description: 'Abasteça seu cartão de recarga agora mesmo',
   },
   {
-    key: 4,
+    key: String(Math.random()),
     img: img4,
     label: 'TV',
     Description: 'Seus canais favoritos',
   },
   {
-    key: 5,
+    key: String(Math.random()),
     img: img5,
     label: 'Central de Doações',
     Description: 'Ajude quem mais precisa!!!',
   },
   {
-    key: 6,
+    key: String(Math.random()),
     img: img6,
     label: 'Pagar Conta',
     Description: 'Pague sua conta de água, luz, boletos bancários, etc. ',
   },
   {
-    key: 7,
+    key: String(Math.random()),
     img: img7,
     label: 'FAQ',
     Description: '--------',
