@@ -61,10 +61,10 @@ export default function SuggestionsDescription() {
         <Card>
           <Option key={item.key}>
             <Img source={item.img} />
-            <Detail>
-              <Label>{item.label}</Label>
-              <Description>{item.Description}</Description>
-            </Detail>
+          <Detail>
+            <Label>{item.label}</Label>
+            <Description>{item.Description}</Description>
+          </Detail>
           </Option>
         </Card>
       ))}
